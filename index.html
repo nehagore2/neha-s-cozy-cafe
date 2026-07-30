@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Neha's cozy cafe</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<!-- HERO SECTION -->
+  <section class="hero">
+    <div class="overlay"></div>
+    <div class="hero-content">
+      <h1>Neha's cozy cafe</h1>
+      <p>Where every cup tells a story</p>
+      <a href="#reserve" class="btn">Reserve Table</a>
+    </div>
+    <div class="steam"></div>
+    <div class="steam"></div>
+    <div class="steam"></div>
+  </section>
+<section class="properties">
+  <h2>Our Signature Menu</h2>
+  <div class="property-grid">
+
+    <div class="property-card">
+      <img src="images/cofee3.jpg" alt="Caramel Drizzle Cheesecake Latte Combo">
+      <h3>Caramel Drizzle Cheesecake Latte Combo</h3>
+      <p>Rich caramel cheesecake paired with a creamy latte</p>
+      <p><strong>Price: ₹349</strong></p>
+    </div>
+
+    <div class="property-card">
+      <img src="images/dessert1.jpg" alt="Molten Chocolate Lava Cake">
+      <h3>Molten Chocolate Lava Cake</h3>
+      <p>Warm chocolate cake with vanilla ice cream & berry compote</p>
+      <p><strong>Price: ₹299</strong></p>
+    </div>
+
+    <div class="property-card">
+      <img src="images/dessert2.jpg" alt="Strawberry Berry Cheesecake">
+      <h3>Strawberry Berry Cheesecake</h3>
+      <p>Creamy NY cheesecake topped with fresh strawberry compote</p>
+      <p><strong>Price: ₹329</strong></p>
+    </div>
+
+    <div class="property-card">
+      <img src="images/dessert3.jpg" alt="Classic Tiramisu with Ice Cream">
+      <h3>Classic Tiramisu with Ice Cream</h3>
+      <p>Italian tiramisu dusted with cocoa, served with chocolate ice cream</p>
+      <p><strong>Price: ₹359</strong></p>
+    </div>
+
+    <div class="property-card">
+      <img src="images/dessert4.jpg" alt="Caramel Affogato Sundae">
+      <h3>Caramel Affogato Sundae</h3>
+      <p>Vanilla ice cream drowned in espresso with caramel drizzle</p>
+      <p><strong>Price: ₹279</strong></p>
+    </div>
+
+    <div class="property-card">
+      <img src="images/coffee1.jpg" alt="Caramel Drizzle Cheesecake Latte Combo">
+      <h3>Blueberry Layer Cake with Leaf Art Latte</h3>
+      <p>Layered blueberry cake served with signature latte art coffee</p>
+      <p><strong>Price: ₹349</strong></p>
+    </div>
+
+  </div>
+</section>
+  <section id="reserve" class="reserve">
+  <h2>Reserve Your Table</h2>
+  <p>Book your cozy spot in just 30 seconds</p>
+
+  <form class="reserve-form" id="reserveForm">
+    <div class="form-group">
+      <label>Name</label>
+      <input type="text" id="name" placeholder="Your Name" required>
+    </div>
+    <div class="form-group">
+      <label>Phone</label>
+      <input type="tel" id="phone" placeholder="+91 98765 43210" required>
+    </div>
+    <div class="form-group">
+      <label>Date</label>
+      <input type="date" id="date" required>
+    </div>
+    <div class="form-group">
+      <label>Time</label>
+      <select id="time" required>
+        <option value="">Select Time</option>
+        <option>10:00 AM</option>
+        <option>12:00 PM</option>
+        <option>3:00 PM</option>
+        <option>6:00 PM</option>
+        <option>8:00 PM</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Guests</label>
+      <input type="number" id="guests" min="1" max="10" value="2" required>
+    </div>
+    <button type="submit" class="btn">Confirm Reservation</button>
+  </form>
+
+  <div id="successMsg" class="success">Table Reserved! We’ll call you to confirm ✨</div>
+</section>
